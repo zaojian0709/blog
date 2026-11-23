@@ -1,0 +1,52 @@
+﻿baseURL = "https://example.org/"
+title = "My Homelab"
+theme = "PaperMod"
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
+
+[params]
+    description = "Homelab 学习笔记：PVE、Docker、K8s、软路由"
+    defaultTheme = "auto"
+    ShowReadingTime = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    ShowWordCount = true
+    ShowShareButtons = false
+    ShowToc = true
+    TocOpen = true
+    comments = false
+    disableSpecial1stPost = false
+
+[params.homeInfoParams]
+    Title = "Hi，我是 Homelab 玩家"
+    Content = "记录我的 Homelab 学习与实践，慢慢变强"
+
+[menu]
+    [[menu.main]]
+        identifier = "posts"
+        name = "文章"
+        url = "/posts/"
+        weight = 10
+    [[menu.main]]
+        identifier = "categories"
+        name = "分类"
+        url = "/categories/"
+        weight = 20
+    [[menu.main]]
+        identifier = "archives"
+        name = "归档"
+        url = "/archives/"
+        weight = 30
+    [[menu.main]]
+        identifier = "search"
+        name = "搜索"
+        url = "/search/"
+        weight = 40
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+[markup]
+    [markup.highlight]
+        style = "github-dark"
